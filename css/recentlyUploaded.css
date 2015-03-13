@@ -1,25 +1,4 @@
 <style>
-	ul {list-style: none;padding: 0px;margin: 0px;}
-		ul li {display: block;}
-		li ul {display: none;}
-		ul li a {display: block;padding: 5px 10px 5px 10px;text-decoration: none;
-           white-space: nowrap;color: black;}
-		ul li a:hover {}
-		li:hover ul {display: block;}
-		li:hover li {}
-		li:hover a {}
-		li:hover li a:hover { width: 40%; height: 10%; background: skyblue;}
-		#drop-nav li ul li {border-top: 0px;}
-	
-	
-	
-	.scrollable {
-			width: 80%;
-			height: 60%;
-			border:4px double #DEBB07;
-			margin: 2% 2% 0px 0px;
-			overflow-y: auto;
-		}
 	
 	.originalPic{
 			width: 99%;
@@ -89,5 +68,45 @@
 	.camera{
 		width: 50%;
 	}
+	
+	ul {
+		list-style: none;
+	}
+
+	.menu > li {
+	}
+	.menu #profile {
+		border: 0;
+		background: transparent;
+		cursor: pointer;
+	}
+	.menu #profile:hover,
+	.menu #profile:focus {
+		outline: 0;
+	}
+
+	.submenu {
+		display: none;
+		padding: 10px;
+	}
+	.menu #profile:focus + .submenu,
+	.submenu:hover {
+		display: block;
+	}
+	
+	.profileLink
+{
+  font-size: 20px;
+  color: rgb(0, 153, 204);
+  text-decoration: none;
+}
+	
+	.scrollable {
+			width: 80%;
+			height: 60%;
+			border:4px double #DEBB07;
+			margin: 2% 2% 0px 0px;
+			overflow-y: auto;
+		}
 	
 </style>
